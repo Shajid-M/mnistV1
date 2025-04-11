@@ -1,10 +1,47 @@
-# Python-generated files
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+*.py[cod]
+*.so
 
-# Virtual environments
-.venv
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Hydra outputs
+outputs/
+multirun/
+
+# Data files
+data/
+*.csv
+*.tsv
+*.json
+*.h5
+*.db
+
+# Logs
+*.log
+logs/
+tb_logs/  # TensorBoard logs
+
+# Checkpoints
+checkpoints/
+*.ckpt
+
+# Configurations
+*.yaml~
+*.yml~
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
