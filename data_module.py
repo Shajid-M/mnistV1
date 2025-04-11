@@ -29,7 +29,7 @@ class MNISTModule(pl.LightningDataModule):
     
     def setup(self, stage=None):
         if stage == "fit" or stage is None:
-            mnist_full = MNIST(self.data_dir, train=True, transform=self.tranform)
+            mnist_full = MNIST(self.data_dir, train=True, transform=self.transform)
             self.mnist_train, self.mnist_val = random_split(mnist_full, [55000, 5000])
 
         if stage == "test" or stage is None:

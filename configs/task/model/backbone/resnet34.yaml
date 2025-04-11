@@ -1,0 +1,2 @@
+_target_: backbone.ResNet34
+pretrained: true

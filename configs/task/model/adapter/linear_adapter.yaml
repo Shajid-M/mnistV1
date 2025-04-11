@@ -1,0 +1,4 @@
+_target_: adapter.LinearAdapter
+in_features: 512
+out_features: 10
+flatten_input: true

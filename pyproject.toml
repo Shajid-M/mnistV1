@@ -9,5 +9,6 @@ dependencies = [
     "numpy>=2.2.4",
     "omegaconf>=2.3.0",
     "pytorch-lightning>=2.5.1",
+    "tensorboard>=2.19.0",
     "torchvision>=0.21.0",
 ]

@@ -1,0 +1,5 @@
+defaults:
+  - task: mnist_classification
+  - data_module: mnist_module
+  - trainer: cpu
+  

@@ -4,7 +4,7 @@ from omegaconf import OmegaConf, DictConfig
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.loggers import TensorBoardLogger
 
-hydra.main(config_path="configs", config_name="config", version_base=None)
+@hydra.main(config_path="configs", config_name="config", version_base=None)
 def train(config: DictConfig) -> None:
 
     data_module = instantiate(config.data_module)
@@ -25,5 +25,5 @@ def train(config: DictConfig) -> None:
     trainer.test(datamodule=data_module)
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     train()

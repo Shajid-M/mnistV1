@@ -1,0 +1,6 @@
+defaults:
+  - backbone: resnet18
+  - adapter: linear_adapter
+  - head: identity_head
+
+_target_: model.MNISTV1

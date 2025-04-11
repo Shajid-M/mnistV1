@@ -1,0 +1,6 @@
+_target_: data_module.MNISTModule
+batch_size: 512
+num_workers: 8
+pin_memory: true
+drop_last: true
+data_dir: ./data/mnist
